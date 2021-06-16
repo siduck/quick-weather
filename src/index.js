@@ -1,1 +1,3 @@
-console.log("hi")
+import getWeather from "modules/apiFuncs";
+
+getWeather("syria");
