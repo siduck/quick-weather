@@ -1,3 +1,3 @@
-import getWeather from "modules/apiFuncs";
+import {getWeather} from "./modules/apiFuncs";
 
-getWeather("syria");
+getWeather("damascus");
