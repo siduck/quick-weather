@@ -1,3 +1,5 @@
-import {getWeather} from "./modules/apiFuncs";
+import { getWeather } from "./modules/apiFuncs";
 
-getWeather("damascus");
+document.querySelector("input").addEventListener("change", (e) => {
+  getWeather(e.currentTarget.value);
+});
