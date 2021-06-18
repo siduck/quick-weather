@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mali&display=swap");
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Mali", cursive;
   display: flex;
   justify-content: center;
 }
 
 .mainDiv {
-  margin: 4rem;
+  margin: 5.5rem;
 }
 
 .textInput {
@@ -25,6 +25,7 @@ body {
   border-radius: 0.3rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 0.2rem;
+  font-family: "Mali", cursive;
 }
 
 .searchBtn {
@@ -33,4 +34,81 @@ body {
 
 .searchBtn:hover {
   cursor: pointer;
+}
+
+/* weather divs */
+
+.mainContent {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 1rem;
+}
+
+.weatherIcon {
+  color: #1a2026;
+  font-size: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.weath_heading {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 0.4rem;
+  background-color: #1a2026;
+  color: white;
+  border-radius: 0.3rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.weath_desc {
+  font-size: 0.7rem;
+}
+
+.mainDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.weatherData {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  background-color: white;
+  width: 26vw;
+  height: 20vw;
+}
+
+.degree {
+  font-size: 1rem;
+  position: absolute;
+}
+
+.temperature {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.misc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.7rem;
+  padding: 0;
+  border-left: 0.1rem solid #1a2026;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-left: 1rem;
+}
+
+.misc,
+.windSpeed,
+.humidity {
+  text-align: left;
 }

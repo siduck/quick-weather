@@ -16,6 +16,10 @@ const getWeather = async (city) => {
   console.log(Math.round(result.main.feels_like - 273.15));
   console.log(result.main.humidity);
   console.log(result.wind.speed);
+  console.log(result);
+
+  //let regionNames = new Intl.DisplayNames(['en'], {type: 'region'});
+  //regionNames.of('AU')
 };
 
 export { getWeather };
