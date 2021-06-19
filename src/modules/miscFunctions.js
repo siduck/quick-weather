@@ -72,8 +72,8 @@ export const addWeather = (data) => {
   addText(country, regionNames.of(data.sys.country));
 
   // figures
-  addText(temp_num, Math.round(data.main.temp - 273.15));
-  addText(feels_likeNum, Math.round(data.main.feels_like - 273.15));
+  addText(temp_num, Math.round(data.main.temp));
+  addText(feels_likeNum, Math.round(data.main.feels_like));
   addText(wind_num, data.wind.speed);
   addText(humidity_num, data.main.humidity);
 };
