@@ -1,2 +1,2 @@
 # weather-app
-personal project made for learning purposes [odin project](https://www.theodinproject.com/dashboard)
+personal project made for learning purposes, given from [odin project](https://www.theodinproject.com/dashboard)
