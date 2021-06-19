@@ -3,13 +3,15 @@ const addText = (divName, content) => {
 };
 
 // divs
-let weath_desc = document.querySelector(".weath_desc");
-let city = document.querySelector(".city");
-let country = document.querySelector(".country");
-let temp_num = document.querySelector(".temp_num");
-let feels_likeNum = document.querySelector(".feels_likeNum");
-let wind_num = document.querySelector(".wind_num");
-let humidity_num = document.querySelector(".humidity_num");
+import {
+  weath_desc,
+  city,
+  country,
+  temp_num,
+  feels_likeNum,
+  wind_num,
+  humidity_num,
+} from "./divSelectors";
 
 const addWeather = (data) => {
   addText(weath_desc, data.weather[0].description);
@@ -28,7 +30,7 @@ const addWeather = (data) => {
 
 const getData = async (area) => {
   const apikey = "3db9f9f8a02a49fffc5a35164ea05c4f";
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${area}&appid=${apikey}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${area}&appid=${apikey}`;
 
   let response = await fetch(url, { mode: "cors" });
 
