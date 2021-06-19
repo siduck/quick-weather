@@ -4,32 +4,43 @@ body {
   font-family: "Mali", cursive;
   display: flex;
   justify-content: center;
+  color: #2e3440;
+  background-color: #fbfbfc;
 }
 
 .mainDiv {
-  margin: 5.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .textInput {
   outline: none;
   border: none;
   text-align: center;
-  font-size: 0.7rem;
+  width: 100%;
+  background-color: #fbfbfc;
 }
 
 .userInput {
   display: flex;
   font-size: 1.3rem;
-  background-color: white;
-  border: 2px solid white;
+  background-color: #fbfbfc;
+  border: 2px solid #fbfbfc;
   border-radius: 0.3rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 0.2rem;
+  padding: 0.5rem;
   font-family: "Mali", cursive;
 }
 
 .searchBtn {
   color: #2d333c;
+  background-color: #d4f0f1;
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 
 .searchBtn:hover {
@@ -47,7 +58,7 @@ body {
 }
 
 .weatherIcon {
-  color: #1a2026;
+  color: #2e3440;
   font-size: 9rem;
   display: flex;
   justify-content: center;
@@ -58,17 +69,17 @@ body {
 .weath_heading {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  padding: 0.4rem;
-  background-color: #1a2026;
-  color: white;
+  padding: 0.8rem;
+  background-color: #2e3440;
+  color: #fbfbfc;
   border-radius: 0.3rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.weath_desc {
-  font-size: 0.7rem;
+.place {
+  display: flex;
+  font-size: 1.4rem;
 }
-
 .mainDetails {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -78,37 +89,41 @@ body {
 .weatherData {
   display: grid;
   grid-template-rows: 1fr 4fr;
-  background-color: white;
+  background-color: #fbfbfc;
   width: 26vw;
   height: 20vw;
 }
 
 .degree {
-  font-size: 1rem;
-  position: absolute;
+  font-size: 1.8rem;
 }
 
 .temperature {
-  font-size: 5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.temp_num {
+  font-size: 6rem;
 }
 
 .misc {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-size: 0.7rem;
   padding: 0;
-  border-left: 0.1rem solid #1a2026;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  border-left: 0.1rem solid #2e3440;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding-left: 1rem;
 }
 
-.misc,
+.feels_temp,
 .windSpeed,
 .humidity {
-  text-align: left;
+  display: flex;
 }

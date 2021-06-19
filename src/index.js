@@ -1,5 +1,8 @@
-import { getWeather } from "./modules/apiFuncs";
+import { getData } from "./modules/apiFuncs";
 
 document.querySelector("input").addEventListener("change", (e) => {
-  getWeather(e.currentTarget.value);
+  getData(e.currentTarget.value);
+  e.currentTarget.value = "";
 });
+
+getData("sanaa");
