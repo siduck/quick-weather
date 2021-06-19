@@ -4,8 +4,14 @@ body {
   font-family: "Mali", cursive;
   display: flex;
   justify-content: center;
-  color: #2e3440;
+  color: #424854;
   background-color: #fbfbfc;
+}
+
+h1 {
+  margin: 5rem;
+  font-weight: bolder;
+  color: #2e3440;
 }
 
 .mainDiv {
@@ -58,7 +64,7 @@ body {
 }
 
 .weatherIconDiv {
-  color: #2e3440;
+  color: #424854;
   font-size: 9rem;
   display: flex;
   justify-content: center;
@@ -70,7 +76,7 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr;
   padding: 0.8rem;
-  background-color: #2e3440;
+  background-color: #424854;
   color: #fbfbfc;
   border-radius: 0.5rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
