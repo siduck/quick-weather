@@ -57,7 +57,7 @@ body {
   padding: 1rem;
 }
 
-.weatherIcon {
+.weatherIconDiv {
   color: #2e3440;
   font-size: 9rem;
   display: flex;

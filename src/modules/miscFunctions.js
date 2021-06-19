@@ -13,10 +13,58 @@ const addText = (divName, content) => {
   divName.textContent = content;
 };
 
-//const change_WeatherIcon = (divName) => {};
+const add_WeatherIcon = (iconn) => {
+  let icon = document.querySelector(".weatherIcon");
+  icon.classList = "";
+  icon.classList.add(iconn);
+  icon.classList.add("weatherIcon");
+};
+
+const change_WeatherIcon = (data) => {
+  switch (data) {
+    case "clear sky":
+      add_WeatherIcon("ph-sun-fill");
+      break;
+    case "few clouds":
+      add_WeatherIcon("ph-cloud-fill");
+      break;
+    case "broken clouds":
+      add_WeatherIcon("ph-cloud-fog-fill");
+      break;
+    case "overcast clouds":
+      add_WeatherIcon("ph-cloud-sun-fill");
+      break;
+    case "scattered clouds":
+      add_WeatherIcon("ph-cloud-fill");
+      break;
+    case "shower rain":
+      add_WeatherIcon("ph-cloud-rain-fill");
+      break;
+    case "rain":
+      add_WeatherIcon("ph-cloud-rain-fill");
+      break;
+    case "haze":
+      add_WeatherIcon("ph-cloud-fog-fill");
+      break;
+    case "moderate rain":
+      add_WeatherIcon("ph-cloud-rain-fill");
+      break;
+    case "thunderstorm":
+      add_WeatherIcon("ph-cloud-lightning-fill");
+      break;
+    case "mist":
+      add_WeatherIcon("ph-snowflake-fill");
+      break;
+    case "snow":
+      add_WeatherIcon("ph-heart-fill");
+      break;
+    default:
+  }
+};
 
 export const addWeather = (data) => {
   addText(weath_desc, data.weather[0].description);
+  change_WeatherIcon(data.weather[0].description);
 
   // place name
   addText(city, data.name);
