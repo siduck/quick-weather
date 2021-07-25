@@ -86,6 +86,7 @@ h1 {
   display: flex;
   font-size: 1.4rem;
 }
+
 .mainDetails {
   display: grid;
   grid-template-columns: 1fr 1fr;

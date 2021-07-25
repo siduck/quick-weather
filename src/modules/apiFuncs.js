@@ -1,18 +1,15 @@
-import { addWeather } from "./miscFunctions";
+import { addWeather, getUrl } from "./miscFunctions";
 
 const getData = async (area) => {
-  const apikey = "3db9f9f8a02a49fffc5a35164ea05c4f";
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${area}&units=metric&appid=${apikey}`;
-
+  const url = getUrl(area);
   let response = await fetch(url);
 
   if (response.status != 200) {
-    alert("NO SUCH PLACE BRUH");
+    alert("place not found");
     throw new Error("place not found ");
   }
 
   let result = await response.json();
-
   addWeather(result);
 };
 

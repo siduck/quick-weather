@@ -77,3 +77,10 @@ export const addWeather = (data) => {
   addText(wind_num, data.wind.speed);
   addText(humidity_num, data.main.humidity);
 };
+
+export const getUrl = (area) => {
+  const apikey = "3db9f9f8a02a49fffc5a35164ea05c4f";
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${area}&units=metric&appid=${apikey}`;
+
+  return url;
+};
